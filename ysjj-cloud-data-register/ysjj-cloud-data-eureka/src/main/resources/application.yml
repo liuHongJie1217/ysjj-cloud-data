@@ -1,0 +1,72 @@
+server:
+  port: ${ysjj.port}
+  undertow:
+    io-threads: 16 # 设置IO线程数, 它主要执行非阻塞的任务,它们会负责多个连接, 默认设置每个CPU核心一个线程
+    worker-threads: 256 # 阻塞任务线程池, 当执行类似servlet请求阻塞操作, undertow会从这个线程池中取得线程,它的值设置取决于系统的负载 当执行类似servlet请求阻塞IO操作会从这个线程池中取得线程，默认值是IO线程数*8
+    # 以f下的配置会影响bufer,这些buffer会用于服务器连接的IO操作,有点类似netty的池化内存管理
+    # 每块buffer的空间大小,越小的空间被利用越充分
+    buffer-size: 1024 #设置buffer大小，这些buffer会用于服务器连接的IO操作，有点类似netty的池化内存管理
+    direct-buffers: true #是否分配的直接内存(NIO直接分配的堆外内存)
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${ysjj.security.name}
+      user.password: ${ysjj.security.password}
+    hostname: ${ysjj.ip}
+    ip-address: ${ysjj.ipAddress}
+    preferIpAddress: true
+    instance-id: ${ysjj.application}:${spring.cloud.client.ip-address}:${ysjj.port}
+
+  client:
+    register-with-eureka: false #表示是否注册自身到eureka服务器 集群情况下 是需要改成true 的因为 集群是注册中心 相互注册自己 同步服务
+    fetch-registry: false  #是否从eureka上获取注册信息 集群情况下需要为true的  因为 会在别的注册中心 获取服务
+    registry-fetch-interval-seconds: 30 #client间隔多久去拉取服务注册信息，默认为30秒，对于api-gateway，如果要迅速获取服务注册状态，可以缩小该值，比如5秒
+    service-url: #（集群时指定另外一个注册中心地址）
+      defaultZone: http://${ysjj.security.name}:${ysjj.security.password}@${eureka.instance.hostname}:${ysjj.eureka-port}/eureka/
+    #      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8762/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8763/eureka/
+  server:
+    enable-self-preservation: false #生产为 true 关闭注册中心的保护机制，Eureka 会统计15分钟之内心跳失败的比例低于85%将会触发保护机制，不剔除服务提供者，如果关闭服务注册中心将不可用的实例正确剔除
+    renewal-percent-threshold: 0.8 #留存的服务实例低于多少比例进入保护模式
+    #启用主动失效，并且每次主动失效检测间隔为3s
+    eviction-interval-timer-in-ms: 60000 # # 该配置可以修改检查失效服务的时间，每隔20s检查失效服务，并移除列表 (Spring Cloud默认该配置是 60s)
+    #eureka server刷新readCacheMap的时间，注意，client读取的是readCacheMap，这个时间决定了多久会把readWriteCacheMap的缓存更新到readCacheMap上
+    #默认30s
+    responseCacheUpdateIntervalMs: 30000
+    #eureka server缓存readWriteCacheMap失效时间，这个只有在这个时间过去后缓存才会失效，失效前不会更新，过期后从registry重新读取注册服务信息，registry是一个ConcurrentHashMap。
+    #由于启用了evict其实就用不太上改这个配置了
+    #默认180s
+    responseCacheAutoExpirationInSeconds: 180
+spring:
+  application:
+    name: ${ysjj.application}
+  #启动控制台带颜色
+  output:
+    ansi:
+      enabled: ALWAYS
+  security:
+    user:
+      name: ${ysjj.security.name}  # 用户名
+      password: ${ysjj.security.password}   # 用户密码
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+#################   cloud 初始化参数   ############################
+ysjj:
+  application: ysjj-permission-eureka #应用名
+  port: 8761 #项目端口号
+  ip: 127.0.0.1 #注册中心ip地址
+  ipAddress: 127.0.0.1 #解决外网环境下，注册中心ip问题
+  #  ip: localhost #注册中心ip地址
+  eureka-port: 8761 #注册中心端口号
+  security:
+    name: ysjj # 用户名
+    password: ysjj123 #密码
+#################  cloud 项目初始化参数 end  ############################

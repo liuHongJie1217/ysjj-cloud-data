@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Software\apache-maven-3.5.4\repository" />
+        <option name="mavenHome" value="E:/Software/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\Software\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bnlPHh2TSUjjC6SjeyYFMm25Qv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\ysjj-cloud-data\ysjj-cloud-data-gateway\src\main\resources" />
+      <recent name="E:\work\ysjj-cloud-data\ysjj-cloud-data-register\ysjj-cloud-data-eureka\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ysjj.cloud.data.eureka.EurekaServerApplication" />
+      <module name="ysjj-cloud-data-eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ysjj.cloud.data.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="" />
+      <created>1589275712559</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589275712559</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Project_Structure" timestamp="1589363930290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589363930290" />
+    <state x="716" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589341845659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="716" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589341845659" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1589363561326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589363561326" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589342426893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589342426893" />
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1589365869611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869611" />
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1589365869611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869611" />
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1589365869611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869611" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1589365869611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869611" />
+    <state width="981" height="348" key="GridCell.Tab.1.bottom" timestamp="1589365869607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="981" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869607" />
+    <state width="981" height="348" key="GridCell.Tab.1.center" timestamp="1589365869607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="981" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869607" />
+    <state width="981" height="348" key="GridCell.Tab.1.left" timestamp="1589365869607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="981" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869606" />
+    <state width="981" height="348" key="GridCell.Tab.1.right" timestamp="1589365869607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="981" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589365869607" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1589277348598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589277348598" />
+    <state x="467" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589365055984">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="467" y="132" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589365055984" />
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1589365058851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589365058851" />
+    <state x="334" y="215" key="new project wizard" timestamp="1589277895660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1589277895660" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589422974524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589422974524" />
+  </component>
+</project>

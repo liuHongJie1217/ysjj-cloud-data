@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ysjj-cloud-data-system-core" />
+        <module name="ysjj-cloud-data-service-user" />
+        <module name="ysjj-cloud-data-service-statistics" />
+        <module name="ysjj-cloud-data-common" />
+        <module name="ysjj-cloud-data-gateway" />
+        <module name="ysjj-cloud-data-eureka" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ysjj-cloud-data-common" options="-parameters" />
+      <module name="ysjj-cloud-data-eureka" options="-parameters" />
+      <module name="ysjj-cloud-data-gateway" options="-parameters" />
+      <module name="ysjj-cloud-data-register" options="-parameters" />
+      <module name="ysjj-cloud-data-service-statistics" options="-parameters" />
+      <module name="ysjj-cloud-data-service-user" options="-parameters" />
+      <module name="ysjj-cloud-data-system-core" options="-parameters" />
+    </option>
+  </component>
+</project>
