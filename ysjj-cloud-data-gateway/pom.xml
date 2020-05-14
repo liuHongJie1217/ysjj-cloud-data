@@ -10,6 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ysjj-cloud-data-gateway</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ysjj-permission-gateway</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!--gateway 网关-->
@@ -90,6 +93,12 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ysjj</groupId>
+            <artifactId>ysjj-cloud-data-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

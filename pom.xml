@@ -33,6 +33,8 @@
         <commons-collections.version>3.2.2</commons-collections.version>
         <jjwt.version>0.9.1</jjwt.version>
         <fastjson.version>1.2.62</fastjson.version>
+        <EasyCaptcha.version>1.6.2</EasyCaptcha.version>
+        <UserAgentUtils.version>1.21</UserAgentUtils.version>
     </properties>
 
     <dependencyManagement>
@@ -49,10 +51,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -62,6 +60,13 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
+        </dependency>
+
+        <!-- 图形化验证 -->
+        <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+            <version>${EasyCaptcha.version}</version>
         </dependency>
 
         <dependency>
@@ -79,6 +84,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+        <!--从request获取登录设备信息-->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>${UserAgentUtils.version}</version>
         </dependency>
 
 
