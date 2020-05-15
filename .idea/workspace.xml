@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/entity/RedisUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/error/RedisKeyEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/config/JwtProperties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/JwtTokenUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/RedisUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/ToolUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/ysjj-cloud-data-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/ysjj-cloud-data-common-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/GuavaRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/RateCheckGatewayFilterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/RateCheckRedisRateLimiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/res/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/app.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/app.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/configuration/InterceptUrlConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/configuration/InterceptUrlConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/filter/TokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/req/HasAclReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/req/HasAclReq.java" afterDir="false" />
-    </list>
+    <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,12 +108,20 @@
       <option name="project" value="LOCAL" />
       <updated>1589450804657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.自定义gateway过滤器&#10;2.权限及登录token校验 - 刷新">
+      <created>1589539724838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589539724839</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="定义权限相关过滤去和基类" />
-    <option name="LAST_COMMIT_MESSAGE" value="定义权限相关过滤去和基类" />
+    <MESSAGE value="1.自定义gateway过滤器&#10;2.权限及登录token校验 - 刷新" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.自定义gateway过滤器&#10;2.权限及登录token校验 - 刷新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1589363930290">
@@ -162,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1035" y="331" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589429236678" />
-    <state x="542" y="113" key="CommitChangelistDialog2" timestamp="1589450803317">
+    <state x="542" y="113" key="CommitChangelistDialog2" timestamp="1589539723033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="542" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589450803317" />
+    <state x="542" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589539723033" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589444804934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="515" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1589528848603" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589450816660">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589539733964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589450816660" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589539733964" />
     <state x="1238" y="298" key="chooseDestDirectoryDialog" timestamp="1589539234579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
