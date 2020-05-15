@@ -1,0 +1,3 @@
+com\ysjj\cloud\data\eureka\EurekaServerApplication.class
+com\ysjj\cloud\data\eureka\listener\EurekaStateChangeListener.class
+com\ysjj\cloud\data\eureka\config\SecurityPermitAllConfig.class

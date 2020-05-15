@@ -1,5 +1,6 @@
 package com.ysjj.cloud.data.gateway.req;
 
+import com.ysjj.cloud.data.common.entity.RedisUser;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class HasAclReq {
+public class HasAclReq extends RedisUser {
     private String url;
 }

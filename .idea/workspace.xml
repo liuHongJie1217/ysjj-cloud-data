@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/common/JSONResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/configuration/InterceptUrlConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/feign/HasAclServiceFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/req/HasAclReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/entity/RedisUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/error/RedisKeyEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/config/JwtProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/JwtTokenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/RedisUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/classes/com/ysjj/cloud/data/common/util/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/ysjj-cloud-data-common-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/target/ysjj-cloud-data-common-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/GuavaRateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/RateCheckGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/limit/RateCheckRedisRateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/res/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/app.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/app.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/configuration/InterceptUrlConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/configuration/InterceptUrlConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/req/HasAclReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com/ysjj/cloud/data/gateway/req/HasAclReq.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +72,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../momo-cloud-permission" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -113,7 +131,19 @@
       <option name="presentableId" value="Default" />
       <updated>1589275712559</updated>
     </task>
+    <task id="LOCAL-00001" summary="定义权限相关过滤去和基类">
+      <created>1589450804657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589450804657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="定义权限相关过滤去和基类" />
+    <option name="LAST_COMMIT_MESSAGE" value="定义权限相关过滤去和基类" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1589363930290">
@@ -124,14 +154,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589341845659" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1589363561326">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1589538191601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589363561326" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589538191601" />
     <state x="1035" y="331" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1589429236678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1035" y="331" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589429236678" />
+    <state x="542" y="113" key="CommitChangelistDialog2" timestamp="1589450803317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="542" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589450803317" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589444804934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -140,22 +174,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589445724350" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1589445660595">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1589450948551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589445660595" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1589445660595">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589450948551" />
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1589450948551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589445660595" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1589445660594">
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589450948551" />
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1589450948551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589445660594" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1589445660595">
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589450948551" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1589450948551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589445660595" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589450948551" />
     <state width="981" height="348" key="GridCell.Tab.1.bottom" timestamp="1589365869607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -176,6 +210,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589445385213" />
+    <state width="515" height="446" key="SwitcherDM" timestamp="1589528848603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="515" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1589528848603" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589450816660">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589450816660" />
+    <state x="1238" y="298" key="chooseDestDirectoryDialog" timestamp="1589539234579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1238" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589539234579" />
     <state x="1003" y="470" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589429197132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,9 +242,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1022" y="234" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589444626489" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589428820818">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589527361028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589428820818" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589527361028" />
   </component>
 </project>

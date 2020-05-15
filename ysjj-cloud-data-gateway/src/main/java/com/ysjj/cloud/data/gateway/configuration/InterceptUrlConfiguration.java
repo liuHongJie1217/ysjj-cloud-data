@@ -24,6 +24,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class InterceptUrlConfiguration {
+    private Long teantId;
     //忽略拦截URL
     private List<String> ignorerUrl = Lists.newArrayList();
     //忽略拦截权限URL
