@@ -4,8 +4,8 @@
     <file url="file://$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ysjj-cloud-data-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ysjj-cloud-data-register/ysjj-cloud-data-eureka/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-service/ysjj-cloud-data-service-statistics/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-service/ysjj-cloud-data-service-user/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-system-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-web/src/main/java" charset="UTF-8" />
   </component>
 </project>

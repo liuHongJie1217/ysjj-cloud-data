@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ysjj-cloud-data-system-core</artifactId>
+        <groupId>com.ysjj</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ysjj-cloud-data-system-core-service</artifactId>
+    <groupId>com.ysjj.service</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>服务中心</description>
+    <modules>
+        <module>ysjj-cloud-data-system-core-service-user</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>system-core-mappe</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>ysjj-cloud-data-system-core-mapper</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

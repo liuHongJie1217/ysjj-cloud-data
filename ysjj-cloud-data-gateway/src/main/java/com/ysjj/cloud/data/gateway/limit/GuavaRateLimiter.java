@@ -3,9 +3,7 @@ package com.ysjj.cloud.data.gateway.limit;
 
 import com.google.common.util.concurrent.RateLimiter;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.web.bind.annotation.PutMapping;
 
-import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**

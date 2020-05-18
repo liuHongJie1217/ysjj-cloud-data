@@ -95,10 +95,9 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.ysjj</groupId>
             <artifactId>ysjj-cloud-data-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>com.ysjj.common</groupId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
