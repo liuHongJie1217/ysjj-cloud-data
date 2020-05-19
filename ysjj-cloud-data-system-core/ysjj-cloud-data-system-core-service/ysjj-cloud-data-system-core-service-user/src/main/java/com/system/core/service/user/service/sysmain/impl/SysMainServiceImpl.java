@@ -151,7 +151,7 @@ public class SysMainServiceImpl implements SysMainService {
                 .uuid(uuid)
                 .build();
         loginLogAsync.loginLog(logDO, HttpRequest);
-        //TODO 更新首页用户在线数量
+        //更新首页用户在线数量
         nettyHandlerService.onlineCount("+");
         //登录成功删除验证码
         redisUtil.del("verUUidCode" + req.getVerUUidCode());

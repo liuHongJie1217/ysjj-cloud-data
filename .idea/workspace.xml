@@ -1,35 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/common/UserAgentGetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/Encrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/StrUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/snowFlake/SnowFlake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/util/snowFlake/SystemClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/dataobject/LoginLogDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/dataobject/UserDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/enums/DelFlagEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/enums/LoginTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/mapper/manual/LoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/java/com/core/mapper/mapper/manual/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/resources/com.ysjj.mapper.mapper/manual/LoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-mapper/src/main/resources/com.ysjj.mapper.mapper/manual/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/src/main/java/com/core/netty/a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/src/main/java/com/core/netty/service/NettyHandlerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/src/main/java/com/core/netty/utils/ChannelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/src/main/java/com/core/netty/utils/IMMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-netty/ysjj-cloud-data-system-core-netty.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java/com/system/core/service/user/async/LoginLogAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java/com/system/core/service/user/async/NettyServiceAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java/com/system/core/service/user/service/systemconfig/SuperAdminsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6ac44f07-a4ea-4410-b2fa-a69b70ed7cfb" name="Default Changelist" comment="1.用户登录实现完成&#10;2.统计在线人数&#10;3.用户登录日志">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/entity/RedisUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-common/src/main/java/com/ysjj/cloud/data/common/entity/RedisUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-system-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java/com/system/core/service/user/service/sysmain/impl/SysMainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ysjj-cloud-data-system-core/ysjj-cloud-data-system-core-service/ysjj-cloud-data-system-core-service-user/src/main/java/com/system/core/service/user/service/sysmain/impl/SysMainServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,14 +136,22 @@
       <option name="project" value="LOCAL" />
       <updated>1589798081670</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.用户登录实现完成&#10;2.统计在线人数&#10;3.用户登录日志">
+      <created>1589885416028</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589885416028</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="定义权限相关过滤去和基类" />
     <MESSAGE value="1.自定义gateway过滤器&#10;2.权限及登录token校验 - 刷新" />
     <MESSAGE value="1.用户登录相关基类定义&#10;2.集成MyBatis&#10;3.PO,VO设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.用户登录相关基类定义&#10;2.集成MyBatis&#10;3.PO,VO设计" />
+    <MESSAGE value="1.用户登录实现完成&#10;2.统计在线人数&#10;3.用户登录日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.用户登录实现完成&#10;2.统计在线人数&#10;3.用户登录日志" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1589772851801">
@@ -193,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1035" y="331" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589429236678" />
-    <state x="515" y="113" key="CommitChangelistDialog2" timestamp="1589798079703">
+    <state x="515" y="113" key="CommitChangelistDialog2" timestamp="1589885475973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="515" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589798079703" />
+    <state x="515" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589885475973" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589444804934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
