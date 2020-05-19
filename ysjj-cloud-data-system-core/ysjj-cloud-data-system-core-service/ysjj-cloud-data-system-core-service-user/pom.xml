@@ -48,5 +48,11 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!-- 引入Netty -->
+        <dependency>
+            <groupId>system-core-netty</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>ysjj-cloud-data-system-core-netty</artifactId>
+        </dependency>
     </dependencies>
 </project>

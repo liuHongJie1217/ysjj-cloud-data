@@ -15,6 +15,7 @@
         <module>ysjj-cloud-data-system-core-web</module>
         <module>ysjj-cloud-data-system-core-service</module>
         <module>ysjj-cloud-data-system-core-mapper</module>
+        <module>ysjj-cloud-data-system-core-netty</module>
     </modules>
 
 
