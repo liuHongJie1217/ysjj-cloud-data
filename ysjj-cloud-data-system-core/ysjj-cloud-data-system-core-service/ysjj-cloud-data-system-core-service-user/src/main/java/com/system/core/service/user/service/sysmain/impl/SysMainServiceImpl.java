@@ -11,11 +11,16 @@ import com.core.mapper.enums.LoginTypeEnum;
 import com.core.mapper.mapper.manual.UserAccountPwdMapper;
 import com.core.mapper.mapper.manual.UserMapper;
 import com.core.mapper.req.sysmain.SysUserLoginReq;
+import com.core.mapper.resp.sysmain.UserInfoRes;
 import com.core.netty.service.NettyHandlerService;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.system.core.service.user.async.LoginLogAsync;
 import com.system.core.service.user.service.sysmain.SysMainService;
+import com.system.core.service.user.service.systemconfig.BaseService;
 import com.system.core.service.user.service.systemconfig.SuperAdminsService;
+import com.wf.captcha.SpecCaptcha;
+import com.ysjj.cloud.data.common.common.JSONResult;
 import com.ysjj.cloud.data.common.entity.RedisUser;
 import com.ysjj.cloud.data.common.error.BizException;
 import com.ysjj.cloud.data.common.error.RedisKeyEnum;
@@ -24,12 +29,15 @@ import com.ysjj.cloud.data.common.util.JwtTokenUtil;
 import com.ysjj.cloud.data.common.util.RedisUtil;
 import com.ysjj.cloud.data.common.util.StrUtil;
 import com.ysjj.cloud.data.common.util.snowFlake.SnowFlake;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -39,7 +47,8 @@ import java.util.List;
  * @version: 1.0 <br>
  */
 @Service
-public class SysMainServiceImpl implements SysMainService {
+@Slf4j
+public class SysMainServiceImpl extends BaseService implements SysMainService {
     @Value("${ysjj.checkVerificationCode}")
     private boolean checkVerificationCode;
     @Autowired
@@ -156,6 +165,57 @@ public class SysMainServiceImpl implements SysMainService {
         //登录成功删除验证码
         redisUtil.del("verUUidCode" + req.getVerUUidCode());
         return uuid;
+
+    }
+
+    @Override
+    public UserInfoRes getUserInfo() {
+        RedisUser redisUser = this.redisUser();
+        UserInfoRes userInfo = UserInfoRes.builder()
+                .sysUserName(redisUser.getSysUserName()).
+                        build();
+        return userInfo;
+    }
+
+    @Override
+    public String logout() {
+        RedisUser redisUser = this.redisUser();
+        redisUtil.del(RedisKeyEnum.REDIS_KEY_USER_INFO.getKey() + redisUser.getRedisUserKey());
+        Object listUuid = redisUtil.get(RedisKeyEnum.REDIS_KEY_USER_INFO.getKey() + redisUser.getBaseId());
+        if (null != listUuid) {
+            ArrayList<String> listRedis = Lists.newArrayList();
+            List<String> list = JSON.parseObject((String) listUuid, new TypeReference<List<String>>() {
+            });
+            list.forEach(s -> {
+                if (!s.equals(redisUser.getRedisUserKey())) {
+                    listRedis.add(s);
+                }
+            });
+            if (listRedis.size() != list.size() && !CollectionUtils.isEmpty(listRedis)) {
+                redisUtil.set(RedisKeyEnum.REDIS_KEY_USER_ID.getKey() + redisUser.getBaseId(), JSONObject.toJSONString(listRedis), RedisKeyEnum.REDIS_KEY_USER_ID.getExpireTime());
+            }
+            //更新首页用户在线人数
+            nettyHandlerService.onlineCount("-");
+        }
+        return "安全退出成功";
+    }
+
+    @Override
+    public JSONResult createVerificationCode() {
+        try {
+            SpecCaptcha specCaptcha = new SpecCaptcha(130, 48, 5);
+            String imageBase64 = specCaptcha.toBase64();
+            String key = StrUtil.genUUID();
+            String aCase = specCaptcha.text().toLowerCase();
+            redisUtil.set(RedisKeyEnum.REDIS_KEY_IMG_UUID_CODE.getKey() + key, aCase, RedisKeyEnum.REDIS_KEY_IMG_UUID_CODE.getExpireTime());
+            HashMap<String, Object> map = Maps.newHashMap();
+            map.put(RedisKeyEnum.REDIS_KEY_IMG_UUID_CODE_HEADER.getKey(), key);
+            map.put(RedisKeyEnum.REDIS_KEY_IMG_TYPE.getKey(), "data:image/png;base64");
+            return JSONResult.ok(map);
+        } catch (Exception e) {
+            log.error("生成验证码异常：{}，{}", e.getMessage(), e.toString());
+            throw BizException.fail("获取验证码base64异常");
+        }
 
     }
 

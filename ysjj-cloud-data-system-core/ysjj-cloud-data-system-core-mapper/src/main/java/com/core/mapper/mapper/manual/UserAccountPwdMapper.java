@@ -18,4 +18,12 @@ public interface UserAccountPwdMapper {
      * @return
      */
     UserAccountPwdDO sysUserAccountLogin(@Param("sysUserLoginName") String sysUserLoginName);
+
+    /**
+     * 新增用户
+     *
+     * @param userAccountPwdDO
+     * @return
+     */
+    int insertSelective(UserAccountPwdDO userAccountPwdDO);
 }

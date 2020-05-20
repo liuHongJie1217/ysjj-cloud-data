@@ -29,4 +29,103 @@
         where sys_user_login_name = #{sysUserLoginName,jdbcType=VARCHAR}
     </select>
 
+    <insert id="insertSelective" parameterType="com.core.mapper.dataobject.UserAccountPwdDO">
+        insert into sys_user_account_pwd
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="uuid != null">
+                uuid,
+            </if>
+            <if test="sysUserLoginName != null">
+                sys_user_login_name,
+            </if>
+            <if test="sysUserPwd != null">
+                sys_user_pwd,
+            </if>
+            <if test="sysLoginNumber != null">
+                sys_login_number,
+            </if>
+            <if test="sysUserAuthSalt != null">
+                sys_user_auth_salt,
+            </if>
+            <if test="sysUserId != null">
+                sys_user_id,
+            </if>
+            <if test="tenantId != null">
+                tenant_id,
+            </if>
+            <if test="remark != null">
+                remark,
+            </if>
+            <if test="disabledFlag != null">
+                disabled_flag,
+            </if>
+            <if test="delFlag != null">
+                del_flag,
+            </if>
+            <if test="createBy != null">
+                create_by,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateBy != null">
+                update_by,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="uuid != null">
+                #{uuid,jdbcType=VARCHAR},
+            </if>
+            <if test="sysUserLoginName != null">
+                #{sysUserLoginName,jdbcType=VARCHAR},
+            </if>
+            <if test="sysUserPwd != null">
+                #{sysUserPwd,jdbcType=VARCHAR},
+            </if>
+            <if test="sysLoginNumber != null">
+                #{sysLoginNumber,jdbcType=INTEGER},
+            </if>
+            <if test="sysUserAuthSalt != null">
+                #{sysUserAuthSalt,jdbcType=VARCHAR},
+            </if>
+            <if test="sysUserId != null">
+                #{sysUserId,jdbcType=BIGINT},
+            </if>
+            <if test="tenantId != null">
+                #{tenantId,jdbcType=BIGINT},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="disabledFlag != null">
+                #{disabledFlag,jdbcType=INTEGER},
+            </if>
+            <if test="delFlag != null">
+                #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="createBy != null">
+                #{createBy,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateBy != null">
+                #{updateBy,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+
 </mapper>

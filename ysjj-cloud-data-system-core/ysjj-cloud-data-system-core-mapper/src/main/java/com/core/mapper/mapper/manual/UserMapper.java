@@ -12,4 +12,6 @@ import org.apache.ibatis.annotations.Param;
 public interface UserMapper {
 
     UserDO getById(@Param("id") Long id);
+
+    int insertSelective(UserDO record);
 }
